@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="desscription" content="html website">
+    <meta name="keywords" content="html, aditya sharma">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" contents="30">
+    <title>Document</title>
 </head>
-<body>
-    <section class="main">
-        <div class="left">
-            <h1>Timeline Branch</h1> 
-            <div class="timeline">
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(0)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2  onclick="change(1)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(2)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(3)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(4)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(5)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-                <section>
-                    <div class="circle"></div>
-                    <h2 onclick="change(6)">1990-2000</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, rem.</p>
-                </section>
-            </div>
-        </div>
-        <div class="right">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad in aspernatur molestias sit provident aut ut placeat obcaecati? Nam vitae nulla ipsa nihil quis similique, dicta quidem quasi ex.
-        </div>
-    </section>
+<body style="background-color:bisque;">
+    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Aditya Sharma</h1>
+    <hr>
+    <br>
+    <p style="background-color: aquamarine;">This is <b>bold</b></p>
+    <p>This is <i>italic</I></p>
+    <p style="background-color: aquamarine;">This is <big>big</big></p>
+    <p>This is <small>small</small></p>
+    <p style="background-color: aquamarine;">This is <sub>subscript</sub></p>
+    <p>This is <sup>superscript</sup></p>
+    <p style="background-color: aquamarine;">This is <ins>inserted</ins></p>
+    <p>This is <del>deleted</del></p>
+    <p style="background-color: aquamarine;">This is <mark>marked</mark></p>
+    <h4>unordered lists</h4>
+    <ul style="text-decoration: chocolate;">
+        <li>pizza</li>
+        <li>sauce</li>
+    </ul>
+    <h4>ordered lists</h4>
+    <ol type="A"> 
+        <li>get up</li>
+        <li>brush</li>
+    </ol>
+    <h4>description lists</h4>
+    <dl>
+        <dt>html</dt>
+        <dd>structure of website</dd>
+        <dt>description term</dt>
+        <dd>description definition</dd>
+    </dl>
+    <table bgcolor="red" width="700">
+        <tr bgcolor="orange" align="center">
+            <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">Wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">Friday</th>
+        <th width="100">Saturday</th>
+        <th width="100">Sunday</th>
+        <tr bgcolor="pink" align="center">
+            <td>open</td>
+            <td>open</td>
+            <td>open</td>
+            <td>open</td>
+            <td>open</td>
+            <td>closed</td>
+            <td>closed</td>
+        </tr>
 
-    <script src="index.js"></script>
+        </tr>
+        
+    </table>
+    <br>
+    <hr>
+    <iframe src="https://www.bing.com" width="700" height="100"></iframe>
+    <br>
+    <br>
+    <button onclick="dosomething()" style="background-color: blueviolet;" style ="border-radius: 0cm;">click me</button>
+    <p id="test">hello </p>
+    <script>
+        function dosomething(){
+            document.getElementById("test").innerHTML="goodbye";
+        }
+    </script>
+    <form action="action_page.php" method="POST">
+        <div>
+            <label for="fname">first name:</label>
+        <input type="text" id="fname" name="first name" placeholder="first" required>
+        </div>
+        <div>
+        <br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="last name" placeholder="last" required>
+        </div>
+        
+        <br>
+        <div>
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="password" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="xx@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="phoneno">phone</label>
+            <input type="phone" id="phoneno" name="phone" placeholder="mobile number" maxlength="10" required>
+        </div>
+        <br>
+        <div>
+            <label for="bday">birthdate</label>
+            <input type="date" id="bday" name="birthdate">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">quantity</label>
+            <input type="quantity" id=" quantity " name="quantity" min="0" max="100" value="1">
+        </div>
+        <br>
+        <div>
+            <label for="gender">gender:</label>
+            <label for="buttons">male</label>
+        <input type="radio" id="buttons" name="gender">
+        <label for="button">female</label>
+        <input type="radio" id="button" name="gender">
+        </div>
+        <br>
+        <label for="payment">payment method</label>
+        <select id="payment" name="payment">
+            <option value="credit card">credit card</option>
+            <option value="gpay">gpay</option>
+            <option value="cash">cash</option> 
+        </select> 
+        <br>
+        <br>
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <div>
+            <br>
+            <br>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+
+    </form>
 </body>
 </html>
